@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate>{
+    CLLocationManager * _locationManager;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *inputText;
 @property (weak, nonatomic) IBOutlet UILabel *outputLabel;
