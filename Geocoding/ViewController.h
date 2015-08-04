@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *outputLabel;
 - (IBAction)findAddress:(id)sender;
 - (IBAction)findLocation:(id)sender;
+@property (strong, nonatomic) CLGeocoder *geocoder;
 
 @end
 

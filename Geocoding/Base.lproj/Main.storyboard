@@ -22,15 +22,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-CH-e1C">
-                                <rect key="frame" x="273" y="93" width="53" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-CH-e1C">
+                                <rect key="frame" x="20" y="95" width="560" height="80.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="9wY-YH-xEb"/>
+                                    <constraint firstAttribute="height" constant="80" id="FXI-XH-7ak"/>
                                     <constraint firstAttribute="height" constant="26" id="bme-IX-MYh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9wY-YH-xEb"/>
+                                        <exclude reference="bme-IX-MYh"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWg-uT-RgP">
                                 <rect key="frame" x="30" y="205" width="540" height="30"/>
@@ -67,11 +74,20 @@
                             <constraint firstAttribute="centerY" secondItem="IVP-hv-3XV" secondAttribute="centerY" constant="285.5" id="HeV-pc-RL9"/>
                             <constraint firstItem="tDf-qv-8wY" firstAttribute="top" secondItem="VPX-5h-MCh" secondAttribute="bottom" constant="15" id="SWQ-Ve-IeB"/>
                             <constraint firstItem="VPX-5h-MCh" firstAttribute="top" secondItem="aWg-uT-RgP" secondAttribute="bottom" constant="16" id="aUb-8i-lc2"/>
+                            <constraint firstAttribute="centerY" secondItem="1NH-CH-e1C" secondAttribute="centerY" constant="165" id="acc-dd-S5r"/>
+                            <constraint firstItem="1NH-CH-e1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gwq-aW-QMg"/>
+                            <constraint firstAttribute="trailing" secondItem="1NH-CH-e1C" secondAttribute="trailing" constant="20" id="hD3-1z-j0Y"/>
                             <constraint firstAttribute="centerY" secondItem="aWg-uT-RgP" secondAttribute="centerY" constant="80" id="jr2-xw-xho"/>
                             <constraint firstAttribute="centerY" secondItem="VPX-5h-MCh" secondAttribute="centerY" constant="34" id="nr5-ga-Uop"/>
                             <constraint firstAttribute="centerY" secondItem="1NH-CH-e1C" secondAttribute="centerY" constant="194" id="uku-3c-6ej"/>
                             <constraint firstItem="aWg-uT-RgP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="wwf-qA-qWr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3ar-1C-vHS"/>
+                                <exclude reference="uku-3c-6ej"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="inputText" destination="aWg-uT-RgP" id="9e4-c8-b8F"/>
