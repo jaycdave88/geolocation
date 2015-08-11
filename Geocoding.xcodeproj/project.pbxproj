@@ -426,6 +426,7 @@
 				3653804A1B703FB900ECBA63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3653804B1B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "GeocodingTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				3653804D1B703FB900ECBA63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
