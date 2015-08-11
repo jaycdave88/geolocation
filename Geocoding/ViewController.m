@@ -62,9 +62,13 @@
     if([CLLocationManager locationServicesEnabled]){
         if (_locationManager == nil) {
             _locationManager = [[CLLocationManager alloc] init];
-            _locationManager.distanceFilter = 300;
-            _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-            _locationManager.delegate = self;
+        }
+        _locationManager.distanceFilter = 300;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        _locationManager.delegate = self;
+        
+        if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [_locationManager requestWhenInUseAuthorization];
         }
 
         [_locationManager startUpdatingLocation];
@@ -83,7 +87,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
     CLLocation *newLocation = [locations lastObject];
     NSTimeInterval eventInterval = [newLocation.timestamp timeIntervalSinceNow];
-    if (abs(eventInterval)< 30.0) {
+    if (fabs(eventInterval)< 30.0) {
         if (newLocation.horizontalAccuracy < 0) {
             return;
         }
@@ -115,6 +119,23 @@
 }
 
 
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    /*
+     The delegate function will be called when the permission status changes the application should then attempt to handle the change appropriately by changing UI or setting up or tearing down data structures.
+     */
+    if(status == kCLAuthorizationStatusNotDetermined) {
+        //[self alertViewWithStatus:NSLocalizedString(@"UNDETERMINED", @"")];
+    }
+    else if(status == kCLAuthorizationStatusRestricted) {
+        //[self alertViewWithStatus:NSLocalizedString(@"RESTRICTED", @"")];
+    }
+    else if(status == kCLAuthorizationStatusDenied) {
+        //[self alertViewWithStatus:NSLocalizedString(@"DENIED", @"")];
+    }
+    else if(status == kCLAuthorizationStatusAuthorizedAlways) {
+        //[self alertViewWithStatus:NSLocalizedString(@"GRANTED", @"")];
+    }
+}
 
 
 @end
