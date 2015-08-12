@@ -49,8 +49,13 @@
     NSString *address = self.inputText.text;
     [self.geocoder geocodeAddressString:address completionHandler:^(NSArray *placemarks, NSError *error) {
         if (placemarks.count > 0) {
-            CLPlacemark *placemark =[placemarks objectAtIndex:0];
-            self.outputLabel.text = placemark.location.description;
+            CLPlacemark *placemark =[placemarks lastObject];
+            NSNumber *lat = [NSNumber numberWithDouble:placemark.location.coordinate.latitude];
+            NSNumber *lng = [NSNumber numberWithDouble:placemark.location.coordinate.longitude];
+            
+            self.outputLabel.text = [NSString stringWithFormat:@"Latitude: %@\nLongitude: %@",lat.description, lng.description];
+
+;
         }
         else if (error.domain == kCLErrorDomain){
             switch (error.code) {
@@ -120,7 +125,7 @@
     [self.geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error) {
         if ([placemarks count] > 0) {
             CLPlacemark *foundPlacemark = [placemarks objectAtIndex:0];
-            self.outputLabel.text = [NSString stringWithFormat:@"You are in: %@", foundPlacemark.description];
+            self.outputLabel.text = [NSString stringWithFormat:@"You are at: %@, %@ %@", foundPlacemark.name, foundPlacemark.ISOcountryCode, foundPlacemark.postalCode];
         }else if (error.code == kCLErrorGeocodeCanceled){
             NSLog(@"Geocoding cancelled");
         }else if (error.code == kCLErrorGeocodeFoundNoResult){
