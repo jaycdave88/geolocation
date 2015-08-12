@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		365380221B703FB900ECBA63 /* Geocoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geocoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		365380221B703FB900ECBA63 /* Geo-Coder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geo-Coder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		365380261B703FB900ECBA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365380271B703FB900ECBA63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		365380291B703FB900ECBA63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		365380331B703FB900ECBA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		365380351B703FB900ECBA63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		365380381B703FB900ECBA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3653803E1B703FB900ECBA63 /* GeocodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3653803E1B703FB900ECBA63 /* Geo-CoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geo-CoderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		365380431B703FB900ECBA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365380441B703FB900ECBA63 /* GeocodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeocodingTests.m; sourceTree = "<group>"; };
 		3653804E1B7042F500ECBA63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -78,8 +78,8 @@
 		365380231B703FB900ECBA63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				365380221B703FB900ECBA63 /* Geocoding.app */,
-				3653803E1B703FB900ECBA63 /* GeocodingTests.xctest */,
+				365380221B703FB900ECBA63 /* Geo-Coder.app */,
+				3653803E1B703FB900ECBA63 /* Geo-CoderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		365380211B703FB900ECBA63 /* Geocoding */ = {
+		365380211B703FB900ECBA63 /* Geo-Coder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 365380481B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geocoding" */;
+			buildConfigurationList = 365380481B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geo-Coder" */;
 			buildPhases = (
 				3653801E1B703FB900ECBA63 /* Sources */,
 				3653801F1B703FB900ECBA63 /* Frameworks */,
@@ -141,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = Geocoding;
+			name = "Geo-Coder";
 			productName = Geocoding;
-			productReference = 365380221B703FB900ECBA63 /* Geocoding.app */;
+			productReference = 365380221B703FB900ECBA63 /* Geo-Coder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3653803D1B703FB900ECBA63 /* GeocodingTests */ = {
+		3653803D1B703FB900ECBA63 /* Geo-CoderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3653804B1B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "GeocodingTests" */;
+			buildConfigurationList = 3653804B1B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geo-CoderTests" */;
 			buildPhases = (
 				3653803A1B703FB900ECBA63 /* Sources */,
 				3653803B1B703FB900ECBA63 /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				365380401B703FB900ECBA63 /* PBXTargetDependency */,
 			);
-			name = GeocodingTests;
+			name = "Geo-CoderTests";
 			productName = GeocodingTests;
-			productReference = 3653803E1B703FB900ECBA63 /* GeocodingTests.xctest */;
+			productReference = 3653803E1B703FB900ECBA63 /* Geo-CoderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3653801D1B703FB800ECBA63 /* Build configuration list for PBXProject "Geocoding" */;
+			buildConfigurationList = 3653801D1B703FB800ECBA63 /* Build configuration list for PBXProject "Geo-Coder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				365380211B703FB900ECBA63 /* Geocoding */,
-				3653803D1B703FB900ECBA63 /* GeocodingTests */,
+				365380211B703FB900ECBA63 /* Geo-Coder */,
+				3653803D1B703FB900ECBA63 /* Geo-CoderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,7 +246,7 @@
 /* Begin PBXTargetDependency section */
 		365380401B703FB900ECBA63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 365380211B703FB900ECBA63 /* Geocoding */;
+			target = 365380211B703FB900ECBA63 /* Geo-Coder */;
 			targetProxy = 3653803F1B703FB900ECBA63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Geocoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Geo-Coder";
 			};
 			name = Debug;
 		};
@@ -369,7 +369,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Geocoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Geo-Coder";
 			};
 			name = Release;
 		};
@@ -387,8 +387,8 @@
 				);
 				INFOPLIST_FILE = GeocodingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocoding.app/Geocoding";
+				PRODUCT_NAME = "Geo-CoderTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geo-Coder.app/Geo-Coder";
 			};
 			name = Debug;
 		};
@@ -402,15 +402,15 @@
 				);
 				INFOPLIST_FILE = GeocodingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocoding.app/Geocoding";
+				PRODUCT_NAME = "Geo-CoderTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geo-Coder.app/Geo-Coder";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3653801D1B703FB800ECBA63 /* Build configuration list for PBXProject "Geocoding" */ = {
+		3653801D1B703FB800ECBA63 /* Build configuration list for PBXProject "Geo-Coder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				365380461B703FB900ECBA63 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		365380481B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geocoding" */ = {
+		365380481B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geo-Coder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				365380491B703FB900ECBA63 /* Debug */,
@@ -428,7 +428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3653804B1B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "GeocodingTests" */ = {
+		3653804B1B703FB900ECBA63 /* Build configuration list for PBXNativeTarget "Geo-CoderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3653804C1B703FB900ECBA63 /* Debug */,

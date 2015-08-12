@@ -22,7 +22,23 @@
     [super viewDidLoad];
     // toga party
     _locationManager = [[CLLocationManager alloc] init];
+    self.inputText.delegate = self;
+
 }
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.inputText resignFirstResponder];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+    if (textField) {
+        [textField resignFirstResponder];
+    }
+
+    return NO;
+}
+
 
 
 - (IBAction)findLocation:(id)sender {

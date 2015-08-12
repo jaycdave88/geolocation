@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "365380211B703FB900ECBA63"
-               BuildableName = "Geocoding.app"
-               BlueprintName = "Geocoding"
-               ReferencedContainer = "container:Geocoding.xcodeproj">
+               BuildableName = "Geo-Coder.app"
+               BlueprintName = "Geo-Coder"
+               ReferencedContainer = "container:Geo-Coder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3653803D1B703FB900ECBA63"
-               BuildableName = "GeocodingTests.xctest"
-               BlueprintName = "GeocodingTests"
-               ReferencedContainer = "container:Geocoding.xcodeproj">
+               BuildableName = "Geo-CoderTests.xctest"
+               BlueprintName = "Geo-CoderTests"
+               ReferencedContainer = "container:Geo-Coder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3653803D1B703FB900ECBA63"
-               BuildableName = "GeocodingTests.xctest"
-               BlueprintName = "GeocodingTests"
-               ReferencedContainer = "container:Geocoding.xcodeproj">
+               BuildableName = "Geo-CoderTests.xctest"
+               BlueprintName = "Geo-CoderTests"
+               ReferencedContainer = "container:Geo-Coder.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "365380211B703FB900ECBA63"
-            BuildableName = "Geocoding.app"
-            BlueprintName = "Geocoding"
-            ReferencedContainer = "container:Geocoding.xcodeproj">
+            BuildableName = "Geo-Coder.app"
+            BlueprintName = "Geo-Coder"
+            ReferencedContainer = "container:Geo-Coder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "365380211B703FB900ECBA63"
-            BuildableName = "Geocoding.app"
-            BlueprintName = "Geocoding"
-            ReferencedContainer = "container:Geocoding.xcodeproj">
+            BuildableName = "Geo-Coder.app"
+            BlueprintName = "Geo-Coder"
+            ReferencedContainer = "container:Geo-Coder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "365380211B703FB900ECBA63"
-            BuildableName = "Geocoding.app"
-            BlueprintName = "Geocoding"
-            ReferencedContainer = "container:Geocoding.xcodeproj">
+            BuildableName = "Geo-Coder.app"
+            BlueprintName = "Geo-Coder"
+            ReferencedContainer = "container:Geo-Coder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
