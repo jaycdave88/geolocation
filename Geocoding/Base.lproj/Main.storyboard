@@ -16,21 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-o2-8Gf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-o2-8Gf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geo-Coder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVP-hv-3XV">
-                                <rect key="frame" x="239" y="46" width="123" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <rect key="frame" x="227" y="46" width="145.5" height="62"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="52"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-CH-e1C">
-                                <rect key="frame" x="20" y="95" width="560" height="170"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-CH-e1C">
+                                <rect key="frame" x="20" y="128" width="560" height="125"/>
                                 <string key="text">"Find Location" - Will find the lattitude and longitude of a given place.
 
 "Find Address" - Will find your current location.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -43,44 +45,75 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDf-qv-8wY">
-                                <rect key="frame" x="20" y="335" width="96" height="30"/>
+                                <rect key="frame" x="20" y="335" width="132" height="42"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="3ZY-WM-hWt"/>
+                                    <constraint firstAttribute="width" constant="132" id="itN-xK-3kW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="1" green="0.53717964709999999" blue="0.28404791619999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Find Location">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="findLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="at9-U6-5T1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPX-5h-MCh">
-                                <rect key="frame" x="20" y="385" width="93" height="30"/>
+                                <rect key="frame" x="20" y="397" width="132" height="43"/>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="OKb-21-EMx"/>
+                                    <constraint firstAttribute="width" constant="132" id="o5n-ZK-MAj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Find Address">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="findAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e52-Bd-Exw"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1M-Z1-c5Q" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="180" y="109" width="240" height="2"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="BL2-Md-Rle"/>
+                                    <constraint firstAttribute="width" constant="240" id="c4O-ye-nAB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aWg-uT-RgP" secondAttribute="trailing" constant="20" id="1a0-sI-eRH"/>
                             <constraint firstItem="5YC-o2-8Gf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="51X-YK-0dY"/>
                             <constraint firstItem="5YC-o2-8Gf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8T5-56-0Pr"/>
+                            <constraint firstAttribute="centerX" secondItem="o1M-Z1-c5Q" secondAttribute="centerX" id="90V-ve-CHe"/>
                             <constraint firstAttribute="trailing" secondItem="1NH-CH-e1C" secondAttribute="trailing" constant="20" id="DBf-KH-xKz"/>
                             <constraint firstItem="tDf-qv-8wY" firstAttribute="top" secondItem="aWg-uT-RgP" secondAttribute="bottom" constant="20" id="Kk7-Ur-iKR"/>
+                            <constraint firstItem="o1M-Z1-c5Q" firstAttribute="top" secondItem="IVP-hv-3XV" secondAttribute="bottom" constant="1" id="KsU-Nd-i24"/>
                             <constraint firstItem="aWg-uT-RgP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LuI-aJ-FJE"/>
                             <constraint firstItem="1NH-CH-e1C" firstAttribute="top" secondItem="IVP-hv-3XV" secondAttribute="bottom" constant="20" id="Q6t-7g-Vg3"/>
                             <constraint firstItem="aWg-uT-RgP" firstAttribute="leading" secondItem="tDf-qv-8wY" secondAttribute="leading" id="R5m-H3-2VY"/>
                             <constraint firstAttribute="centerX" secondItem="IVP-hv-3XV" secondAttribute="centerX" id="ZzZ-JW-nJ1"/>
                             <constraint firstItem="VPX-5h-MCh" firstAttribute="top" secondItem="tDf-qv-8wY" secondAttribute="bottom" constant="20" id="eZh-dp-gwI"/>
-                            <constraint firstItem="aWg-uT-RgP" firstAttribute="top" secondItem="1NH-CH-e1C" secondAttribute="bottom" constant="20" id="hDW-cc-FM1"/>
+                            <constraint firstItem="aWg-uT-RgP" firstAttribute="top" secondItem="1NH-CH-e1C" secondAttribute="bottom" constant="32" id="hDW-cc-FM1"/>
                             <constraint firstItem="IVP-hv-3XV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="jAn-1h-mtQ"/>
                             <constraint firstItem="tDf-qv-8wY" firstAttribute="leading" secondItem="VPX-5h-MCh" secondAttribute="leading" id="mJU-Zs-Sya"/>
                             <constraint firstAttribute="bottom" secondItem="5YC-o2-8Gf" secondAttribute="bottom" id="nwO-8X-Z8s"/>
@@ -99,7 +132,4 @@
             <point key="canvasLocation" x="230" y="315"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="background" width="2000" height="993"/>
-    </resources>
 </document>

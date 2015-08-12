@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tumblr_static_4rtmp9qr29wkc4s8oc88kwcg0.png"
+      "filename" : "bg.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "tumblr_static_4rtmp9qr29wkc4s8oc88kwcg0-1.png"
+      "filename" : "bg-1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "tumblr_static_4rtmp9qr29wkc4s8oc88kwcg0-2.png"
+      "filename" : "bg-2.png"
     }
   ],
   "info" : {
